@@ -1,0 +1,51 @@
+<head>
+    <link rel="icon" href="/img/face.png">
+    <title>George Tong | Who</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e32af829a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/who.css">
+</head>
+<body class="body-id">
+{{>socialbar}}
+<!--face/title-->
+<div id="face-who" class="face-who">
+    <!--    navbar-->
+    {{>navbar}}
+
+    <!--   face content-->
+    <div class="title-who">
+        <h1>Who?</h1>
+
+
+    </div>
+    <div class="main-text">
+        <p>My name is George Tong, I live in the UK and enjoy coding. I like to make websites, develop apps and programme hardware. Check out some of my projects in the
+            <a href="/work">WORK</a> section.</p>
+    </div>
+
+</div>
+    <!--footer-->
+    <div class="footer">
+        {{>footer}}
+    </div>
+</div>
+</body>
+
+
+<script>
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function(){
+        var st = window.pageYOffset || document.body.scrollTop;
+        if (st > lastScrollTop){
+            // SCROLL DOWN
+            document.getElementById('main-who').scrollIntoView()
+        } else {
+            // SCROLL UP
+            document.getElementById('face-who').scrollIntoView()
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
+    // Credits for scroll feature: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+</script>
+</body>
+

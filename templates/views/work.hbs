@@ -1,0 +1,29 @@
+<head>
+    <link rel="icon" href="/img/face.png">
+    <title>George Tong | Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/work.css">
+</head>
+<body>
+{{>socialbar}}
+<div class="face-page">
+    <div class="navigation">
+    {{>navbar}}
+    </div>
+    <div class="allAppItemsContainer">
+        {{#each work.work}}
+        <div class="appItemsContainer" onclick="location.href='{{this.url}}'">
+            <img src="{{this.img}}" class="appItemImg">
+            <div class="appItemsTextElements">
+            <h1 class="appItemTitle">{{this.title}}</h1>
+                <h5>{{this.date}}</h5>
+            <p class="appItemDesc">{{this.description}}</p>
+            </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+</body>
+
+<script>
+</script>

@@ -1,0 +1,82 @@
+/* DIV to hold all apps (parent). */
+.allAppItemsContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* DIV to hold one app (child). */
+.appItemsContainer {
+    display: inline-flex;
+    flex-grow: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/* DIV to hold one app (child). :Hover */
+.appItemsContainer:hover {
+    cursor: pointer;
+    background: #f8f8f8;
+}
+
+/* App items image. */
+.appItemImg {
+    width: 20vw;
+    border-radius: 17.544%;
+}
+
+/* App items text elements */
+.appItemsTextElements {
+    margin-left: 10px;
+}
+
+/* App items title. */
+.appItemTitle {
+
+}
+
+/* App items description. */
+.appItemDesc {
+
+}
+/* App items description. */
+.appItemsTextElements h5 {
+    margin-bottom: 5px;
+}
+
+.appItemImg {
+    border-radius: 17.544%;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+body {
+    overflow-x: hidden;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.face-page {
+    display: block;
+    width:100%;
+}
+
+.navigation {
+    /* fixed keyword is fine too */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* z-index works pretty much like a layer:
+    the higher the z-index value, the greater
+    it will allow the navigation tag to stay on top
+    of other tags*/
+}

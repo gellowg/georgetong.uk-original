@@ -1,0 +1,131 @@
+<head>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf8OuIZAAAAAO6N3w5fDU6-UdNlAoqObkRdeHv5"></script>
+    <link rel="icon" href="/img/face.png">
+    <title>George Tong | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+<div class="whole-page">
+<!-- The Modal -->
+<div id="info-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="statusImg" src="/img/loading.gif" class="status-img" alt="Loading...">
+        <h2 id="statusText"></h2>
+    </div>
+
+</div>
+{{>navbar}}
+<div class="contact-text">
+    <h1>Hey, I just met you,</h1>
+    <h2>And this is crazy,</h2>
+    <h2>But here's my email,</h2>
+    <h2>So mail me, maybe?</h2>
+</div>
+<div class="container">
+
+    <div class="form-box">
+        <h1>Form</h1>
+        <form id="contact-form" onsubmit="send()">
+            <div class="line-one">
+                <div class="name-box">
+                    <h3>Name:</h3>
+                    <input name="nameInput" type="text" placeholder="Name">
+                </div>
+                <div class="email-box">
+                    <h3>Email:</h3>
+                    <input name="emailInput" type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="message-box">
+                <h3>Message:</h3>
+                <textarea placeholder="Message" name="messageInput" cols="10" rows="10"></textarea>
+            </div>
+            <button id="submit-btn">Send</button>
+        </form>
+
+    </div>
+
+    <div class="info-box">
+    <h1>Contact me</h1>
+
+    <h3>Email:</h3>
+    <h4>me@georgetong.uk</h4>
+
+    <h3>Instagram:</h3>
+    <h4>@gellowg</h4>
+
+    <h3>Twitter:</h3>
+    <h4>@gellowg</h4>
+</div>
+
+
+</div>
+</div>
+<script>
+    const form = document.getElementById('contact-form');
+    form.onsubmit = (e) => {
+        e.preventDefault()
+        const name = form.nameInput.value
+        const email = form.emailInput.value
+        const message = form.messageInput.value
+
+        const statusImg = document.getElementById('statusImg')
+        const statusText = document.getElementById('statusText')
+
+        // Verifys reCAPTCHA before submitting.
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lf8OuIZAAAAAO6N3w5fDU6-UdNlAoqObkRdeHv5', {action: 'submit'}).then(function(token) {
+                fetch('/send-email?name=' + name + '&email=' + email + '&message=' + message)
+                        .then(resp => {
+                            resp.json().then(data => {
+                                console.log(data)
+                                if (data.success === false) {
+                                    statusImg.src = '/img/cross.png'
+                                } else if (data.success === true) {
+                                    statusImg.src = '/img/tick.png'
+                                }
+
+                                statusText.innerHTML = data.message
+
+                            })
+                        })
+            });
+        });
+
+    }
+
+    // Modal
+    // Get the modal
+    var modal = document.getElementById("info-modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("submit-btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+        document.getElementById('statusText').innerHTML = ''
+        document.getElementById('statusImg').src = '/img/loading.gif'
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
