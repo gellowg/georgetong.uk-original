@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="added dotenv dependency">
+    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="added server config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1629226707721" duration="252000" />
       <workItem from="1629226975278" duration="440000" />
       <workItem from="1640539891624" duration="2131000" />
-      <workItem from="1715280667568" duration="1281000" />
+      <workItem from="1715280667568" duration="3010000" />
     </task>
     <task id="LOCAL-00001" summary="Added z-index to page to make the navbar go to front.">
       <created>1605198102939</created>
@@ -286,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640541677748</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added server config">
+      <created>1715281987156</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715281987156</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +341,7 @@
     <MESSAGE value="fixed footer date again" />
     <MESSAGE value="init" />
     <MESSAGE value="added dotenv dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dotenv dependency" />
+    <MESSAGE value="added server config" />
+    <option name="LAST_COMMIT_MESSAGE" value="added server config" />
   </component>
 </project>
