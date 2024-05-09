@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,12 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="fixed footer date again">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="added dotenv dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendgrid.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/templates/partials/footer.hbs" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/georgetong/Documents/Code Projects/WebstormProjects/georgetong.uk-express",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shadow\WebstormProjects\georgetong.uk-express\public\img" />
@@ -107,7 +108,8 @@
       <workItem from="1619708593375" duration="9000" />
       <workItem from="1629226707721" duration="252000" />
       <workItem from="1629226975278" duration="440000" />
-      <workItem from="1640539891624" duration="865000" />
+      <workItem from="1640539891624" duration="2131000" />
+      <workItem from="1715280667568" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="Added z-index to page to make the navbar go to front.">
       <created>1605198102939</created>
@@ -270,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618235887707</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="init">
+      <created>1640541135251</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1640541135251</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added dotenv dependency">
+      <created>1640541677748</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1640541677748</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +333,8 @@
     <MESSAGE value="fixed footer" />
     <MESSAGE value="fixed footer date" />
     <MESSAGE value="fixed footer date again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed footer date again" />
+    <MESSAGE value="init" />
+    <MESSAGE value="added dotenv dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dotenv dependency" />
   </component>
 </project>
