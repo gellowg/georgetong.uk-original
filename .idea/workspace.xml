@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="fixed footer date again">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendgrid.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="e06133f9-0bdd-4a33-8a81-b3e4f7295518" name="Default Changelist" comment="git rid of cringe contact text" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +102,7 @@
       <workItem from="1629226707721" duration="252000" />
       <workItem from="1629226975278" duration="440000" />
       <workItem from="1640539891624" duration="865000" />
+      <workItem from="1640904711355" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="Added z-index to page to make the navbar go to front.">
       <created>1605198102939</created>
@@ -270,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618235887707</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="git rid of cringe contact text">
+      <created>1640904772545</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1640904772545</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +319,7 @@
     <MESSAGE value="fixed footer" />
     <MESSAGE value="fixed footer date" />
     <MESSAGE value="fixed footer date again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed footer date again" />
+    <MESSAGE value="git rid of cringe contact text" />
+    <option name="LAST_COMMIT_MESSAGE" value="git rid of cringe contact text" />
   </component>
 </project>
